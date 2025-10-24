@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HoneyBee</title>
-    <link rel="shortcut icon" href="img/shortcut-icon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="img/shortcut-icon.png"
+      type="image/x-icon"
+    />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -12,21 +16,71 @@
     ></script>
   </head>
   <body>
-        <header class="header">
-            <nav
-                data-hx-trigger="load"
-                data-hx-swap="outerHTML"
-                data-hx-get="global.header-nav.partial.html"
-            ></nav>
-            <div
-                data-hx-trigger="load"
-                data-hx-swap="outerHTML"
-                data-hx-get="index.header-hero.partial.html"
-            ></div>
-        </header>
-        <main class="main">
-
-        </main>
-    <footer class="footer"></footer>
+    <header class="header">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.header-hero.partial.html"
+      ></div>
+    </header>
+    <main class="main">
+      <selection
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.services.partial.html"
+      ></selection>
+      <selection
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.why-choose-us.partial.html"
+      ></selection>
+      <selection
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.type-of-honey.partial.html"
+      ></selection>
+      <selection
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.store.partial.html"
+      ></selection>
+      <selection
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.how-to-order.partial.html"
+      ></selection>
+      <selection
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.testimonials.partial.html"
+      ></selection>
+      <selection
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.blog.partial.html"
+      ></selection>
+      <selection
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.faq.partial.html"
+      ></selection>
+      <selection
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.contacts.partial.html"
+      ></selection>
+    </main>
+    <footer class="footer">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer.partial.html"
+      ></nav>
+    </footer>
   </body>
 </html>
